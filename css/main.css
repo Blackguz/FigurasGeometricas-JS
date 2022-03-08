@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.header-principal{
+    background-color: #253062;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.header-principal h1 {
+    text-transform: uppercase;
+}
+
+.respuesta{
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 0.5rem;
+}
+
+.respuesta span{
+    font-weight: bold;
+}
+
+.figuras{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.caja-figura{
+    border: #253062 solid 2px;
+    width: 28%;
+    height: 40rem;
+    border-radius: 0.4rem;
+    float: left;
+    margin: 1.5rem;
+}
+
+.caja-figura__titulo{
+    background-color: #253062;
+    text-align: center;
+    color: #fff;
+    padding: 0.3rem;
+}
+
+.caja-figura__contenido{
+    text-align: center;
+    padding: 1rem;
+}
+
+.caja-figura__contenido label{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.caja-figura__contenido input{ 
+    width: 14rem;
+    height: 2rem;
+    border: #253062 solid 2px;
+    border-radius: 0.3rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: inline-block;
+    padding: 1rem;
+    margin: 1rem;
+    color: #253062;
+}
+
+.caja-figura__btn{
+    width: 8rem;
+    height: 2rem;
+    text-align: center;
+    background-color: #253062;
+    color: #fff;
+    border-style: none;
+    font-size: 1.1rem;
+    margin: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+.caja-figura__btn:hover{
+    background-color: #323f79;
+    width: 8.09rem;
+    transition-duration: 50ms;
+    cursor: pointer;
+}
+
+.caja-figura__btn:active{
+    background-color: #334699;
+}
+
+/* Chrome, Safari, Edge, Opera 
+Con esto removemos el scroll de los input numericos y otros para que el usuario
+lo coloque manualmente.
+*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
