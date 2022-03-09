@@ -20,7 +20,7 @@
 
     <!-- Respuesta-->
     <section class="respuesta">
-        <p>El área del Cuadrado es: <span>45 cm</span></p>
+        <p id="result">El área del Cuadrado es: <span>45 cm</span></p>
     </section>
 
     <!-- Figuras-->
@@ -33,9 +33,9 @@
                 <div class="caja-figura__contenido">
                     <form action="">
                         <label for="">¿Cuanto mide cada lado del cuadrado?</label>
-                        <input type="number" placeholder="Ingrese los lados">
-                        <button class="caja-figura__btn" type="button">Perimetro</button>
-                        <button class="caja-figura__btn" type="button">Área</button>
+                        <input type="number" id="inputSide" placeholder="Ingrese los lados">
+                        <button class="caja-figura__btn" type="button" onclick="calculatePerimSquare()">Perimetro</button>
+                        <button class="caja-figura__btn" type="button" onclick="calculateAreaSquare()">Área</button>
                     </form>
                 </div>
             </div>
@@ -47,17 +47,17 @@
                 <div class="caja-figura__contenido">
                     <form action="">
                         <label for="">¿Cuanto mide cada lado de tu triangulo?</label>
-                        <input type="number" placeholder="Ingrese el lado 01">
-                        <input type="number" placeholder="Ingrese el lado 02">
-                        <input type="number" placeholder="Ingrese el lado 03">
-                        <button class="caja-figura__btn" type="button">Perimetro</button>
+                        <input type="number" id="lado1Input" placeholder="Ingrese el lado 01">
+                        <input type="number" id="lado2Input" placeholder="Ingrese el lado 02">
+                        <input type="number" id="lado3Input" placeholder="Ingrese el lado 03">
+                        <button class="caja-figura__btn" type="button" onclick="calculatePerimTriangulo()">Perimetro</button>
                     </form>
 
                     <form action="">
                         <label for="">¿Cuanto mide la base y la altura de tu triangulo?</label>
-                        <input type="number" placeholder="Ingrese la base">
-                        <input type="number" placeholder="Ingrese la altura">
-                        <button class="caja-figura__btn" type="button">Área</button>
+                        <input type="number" id="baseInput" placeholder="Ingrese la base">
+                        <input type="number" id="alturaInput" placeholder="Ingrese la altura">
+                        <button class="caja-figura__btn" type="button" onclick="calculateAreaTriangulo()">Área</button>
                     </form>
                 </div>
             </div>
@@ -78,6 +78,8 @@
             </div>
         </div>
     </main>
+
+    <script src="js/geometricas.js" type="text/javascript"></script>
 </body>
 
 </html>
